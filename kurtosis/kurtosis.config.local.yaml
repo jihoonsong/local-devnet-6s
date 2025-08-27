@@ -1,0 +1,31 @@
+participants:
+  - el_type: geth
+    el_image: geth-6s:latest
+    cl_type: prysm
+    cl_image: prysm-beacon-chain-6s:latest
+    vc_type: prysm
+    vc_image: prysm-validator-6s:latest
+    count: 7
+network_params:
+  genesis_delay: 20
+  electra_fork_epoch: 0
+  fulu_fork_epoch: 1
+  perfect_peerdas_enabled: true
+  num_validator_keys_per_node: 256
+snooper_enabled: true
+additional_services:
+  - dora
+  - tx_fuzz
+  - spamoor
+port_publisher:
+  additional_services:
+    enabled: true
+    public_port_start: 65500
+spamoor_params:
+  spammers:
+    - scenario: eoatx
+      config:
+        throughput: 100
+    - scenario: uniswap-swaps
+      config:
+        throughput: 100
