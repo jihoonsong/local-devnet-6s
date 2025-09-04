@@ -47,8 +47,8 @@ docker load -i "bazel-bin/cmd/validator/oci_image_tarball/tarball.tar"
 
 # Retag the Docker image.
 echo "Retagging Docker image..."
-docker image tag gcr.io/offchainlabs/prysm/beacon-chain:latest prysm-beacon-chain-6s:latest
-docker image tag gcr.io/offchainlabs/prysm/validator:latest prysm-validator-6s:latest
+docker image tag gcr.io/offchainlabs/prysm/beacon-chain:latest prysm-beacon-chain-eip7782:latest
+docker image tag gcr.io/offchainlabs/prysm/validator:latest prysm-validator-eip7782:latest
 
 # Remove the intermediate Docker images.
 echo "Removing the intermediate Docker images..."

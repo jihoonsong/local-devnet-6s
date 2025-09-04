@@ -1,5 +1,5 @@
 ENCLAVE_NAME := 6s
-ETHEREUM_PACKAGE := github.com/ethpandaops/ethereum-package
+ETHEREUM_PACKAGE := github.com/morph-dev/ethereum-package@eip7782
 CONFIG_FILE := kurtosis.config
 
 .PHONY: run

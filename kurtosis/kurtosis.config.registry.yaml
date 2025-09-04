@@ -1,15 +1,15 @@
 participants:
   - el_type: geth
-    el_image: ethpandaops/geth:master
+    el_image: morphdev1803/geth:eip7782
     cl_type: prysm
-    cl_image: jihoonsg/prysm-beacon-chain-6s:923b87f
+    cl_image: jihoonsg/prysm-beacon-chain-eip7782:9c30f26
     vc_type: prysm
-    vc_image: jihoonsg/prysm-validator-6s:923b87f
-    count: 7
+    vc_image: jihoonsg/prysm-validator-eip7782:9c30f26
+    count: 8
 network_params:
   genesis_delay: 20
-  electra_fork_epoch: 0
-  fulu_fork_epoch: 1
+  fulu_fork_epoch: 0
+  eip7782_fork_epoch: 1
   perfect_peerdas_enabled: true
   num_validator_keys_per_node: 256
 snooper_enabled: true
@@ -17,6 +17,8 @@ additional_services:
   - dora
   - tx_fuzz
   - spamoor
+ethereum_genesis_generator_params:
+  image: morphdev1803/genesis-generator:eip7782
 port_publisher:
   additional_services:
     enabled: true

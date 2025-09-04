@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build . -t geth-6s:latest
+docker build . -t geth-eip7782:latest
