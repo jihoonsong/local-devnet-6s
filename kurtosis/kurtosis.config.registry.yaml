@@ -19,6 +19,8 @@ additional_services:
   - spamoor
 ethereum_genesis_generator_params:
   image: morphdev1803/genesis-generator:eip7782
+dora_params:
+  image: morphdev1803/dora:eip7782
 port_publisher:
   additional_services:
     enabled: true
